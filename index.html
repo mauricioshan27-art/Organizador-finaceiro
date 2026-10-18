@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Organizador Financeiro</title>
+</head>
+
+<body>
+    <h1>Organizador de Finanças</h1>
+
+    <section>
+        <h2>Adicionar Salário</h2>
+        <input type="number" id="salario" placeholder="Digite o valor">
+        <button onclick="adicionarSalario()">Adicionar</button>
+    </section>
+
+    <section>
+        <h2>Adicionar Gasto</h2>
+        <input type="text" id="descricao" placeholder="Descrição">
+        <input type="number" id="valor" placeholder="Valor">
+        <button onclick="adicionarGasto()">Adicionar</button>
+    </section>
+
+    <section>
+        <h2>Resumo</h2>
+        <p>Total de Salários: <span id="totalSalarios">0</span></p>
+        <p>Total de Gastos: <span id="totalGastos">0</span></p>
+        <p>Saldo Disponível: <span id="saldo">0</span></p>
+    </section>
+
+    <section>
+        <h2>Lista de Gastos</h2>
+        <ul id="listaGastos"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
